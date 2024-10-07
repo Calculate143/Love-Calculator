@@ -84,7 +84,7 @@ let lastAdviceIndex = -1;
             document.getElementById('calculating').style.display = 'block';
             
             setTimeout(() => {
-                const loveScore = Math.floor(Math.random() * 101);
+                const loveScore = Math.floor(Math.random() * (101 - 60)) + 60;
                 const resultText = `
                     <span class="names">${name1}</span> and <span class="names">${name2}</span><br>
                     Your love score is:<br>
